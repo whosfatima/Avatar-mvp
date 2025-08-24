@@ -1,39 +1,63 @@
-body {
-    font-family: sans-serif;
-    margin: 0;
-    background: #f7f7f7;
-}
-
-.wrap {
-    max-width: 720px;
-    margin: 40px auto;
-    background: #fff;
-    padding: 24px;
-    border-radius: 12px;
-}
-
-#avatar-container {
-    width: 100%;
-    aspect-ratio: 16/9;
-    background: #111;
-    border-radius: 12px;
-    overflow: hidden;
-}
-
-.actions {
-    display: flex;
-    gap: 12px;
-    margin: 16px 0;
-}
-
-.metrics {
-    display: flex;
-    gap: 24px;
-    margin: 8px 0;
-    color: #444;
-}
-
-.privacy {
-    margin-top: 12px;
-    color: #666;
-}
+  body {
+      font-family: sans-serif;
+      margin: 0;
+      background: #f7f7f7;
+  }
+  
+  .wrap {
+      max-width: 720px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 24px;
+      border-radius: 12px;
+  }
+  
+  #avatar-container {
+      width: 100%;
+      aspect-ratio: 16/9;
+      background: #111;
+      border-radius: 12px;
+      overflow: hidden;
+  }
+  
+  .actions {
+      display: flex;
+      gap: 12px;
+      margin: 16px 0;
+      flex-wrap: wrap;
+  }
+  
+  .metrics {
+      display: flex;
+      gap: 24px;
+      margin: 8px 0;
+      color: #444;
+      flex-wrap: wrap;
+  }
+  
+  .privacy {
+      margin-top: 12px;
+      color: #666;
+  }
+  
+  .muted {
+      color: #777;
+      font-size: 12px;
+  }
+  
+  button {
+      cursor: pointer;
+      padding: 8px 12px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      background: #fafafa;
+  }
+  
+  button[disabled] {
+      opacity: 0.5;
+      cursor: not-allowed;
+  }
+  
+  .csat {
+      margin-top: 8px;
+  }

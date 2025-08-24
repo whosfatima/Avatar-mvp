@@ -1,44 +1,53 @@
 <!doctype html>
 <html lang="fa">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>Avatar MVP</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Avatar MVP</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body dir="rtl">
-  <main class="wrap">
-    <h1>دستیار مجازی فروش</h1>
+    <main class="wrap">
+        <h1>دستیار مجازی فروش</h1>
 
-    <!-- جایگاه Embed آواتار (مثلاً iframe یا div مخصوص ویجت) -->
-    <div id="avatar-container">
-      <!-- مثال: اگر سرویس iframe بده -->
-      <!-- <iframe src="DID_EMBED_URL" allow="microphone; camera" frameborder="0"></iframe> -->
-    </div>
+        <!-- جایگاه Embed آواتار (مثلاً iframe یا div مخصوص ویجت) -->
+        <div id="avatar-container">
+            <!-- مثال: اگر سرویس iframe بده -->
+            <!-- <iframe src="DID_OR_HEYGEN_EMBED_URL" allow="microphone; camera" frameborder="0" style="width:100%;height:100%"></iframe> -->
+        </div>
 
-    <div class="actions">
-      <button id="start">شروع معرفی محصولات</button>
-      <button id="end" disabled>پایان</button>
-    </div>
+        <div class="actions">
+            <button id="start">شروع معرفی محصولات</button>
+            <button id="end" disabled>پایان</button>
+            <button id="cta" data-cta>بیشتر بدانید</button>
+            <span class="muted">(CTA برای KPI کلیک)</span>
+        </div>
 
-    <section class="metrics">
-      <div>Latency: <span id="latency">--</span> ms</div>
-      <div>Turns: <span id="turns">0</span></div>
-    </section>
+        <section class="metrics">
+            <div>Latency: <span id="latency">--</span> ms</div>
+            <div>Turns: <span id="turns">0</span></div>
+            <div>Session: <span id="duration">0</span> s</div>
+            <div>CSAT: <span id="csat">—</span></div>
+        </section>
 
-    <section class="privacy">
-      <small>
-        با زدن «شروع» شما با استفاده از میکروفون و پردازش صدا موافقت می‌کنید.
-        <a href="#" target="_blank">سیاست حریم خصوصی</a>
-      </small>
-    </section>
+        <section class="privacy">
+            <small>
+          این دمو ممکن است صدای شما را برای تولید پاسخ به‌صورت لحظه‌ای پردازش
+          کند. لطفاً اطلاعات حساس وارد نکنید. استفاده‌ی شما به معنی موافقت با
+          این مورد است.
+          <a href="#" target="_blank">سیاست حریم خصوصی</a>
+        </small>
+        </section>
 
-    <section class="csat" hidden>
-      <p>این معرفی برات مفید بود؟</p>
-      <button data-csat="up">👍</button>
-      <button data-csat="down">👎</button>
-    </section>
-  </main>
-  <script src="app.js"></script>
+        <section class="csat" hidden>
+            <p>این معرفی برات مفید بود؟</p>
+            <button data-csat="up">👍</button>
+            <button data-csat="down">👎</button>
+        </section>
+    </main>
+    <script src="app.js"></script>
 </body>
+
 </html>
