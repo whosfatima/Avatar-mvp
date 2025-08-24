@@ -1,6 +1,39 @@
-body { font-family: sans-serif; margin: 0; background:#f7f7f7; }
-.wrap { max-width: 720px; margin: 40px auto; background:#fff; padding: 24px; border-radius: 12px; }
-#avatar-container { width: 100%; aspect-ratio: 16/9; background:#111; border-radius: 12px; overflow: hidden; }
-.actions { display:flex; gap:12px; margin:16px 0; }
-.metrics { display:flex; gap:24px; margin:8px 0; color:#444; }
-.privacy { margin-top: 12px; color:#666; }
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background: #f7f7f7;
+}
+
+.wrap {
+    max-width: 720px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 24px;
+    border-radius: 12px;
+}
+
+#avatar-container {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background: #111;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.actions {
+    display: flex;
+    gap: 12px;
+    margin: 16px 0;
+}
+
+.metrics {
+    display: flex;
+    gap: 24px;
+    margin: 8px 0;
+    color: #444;
+}
+
+.privacy {
+    margin-top: 12px;
+    color: #666;
+}
